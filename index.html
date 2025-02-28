@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreteFácil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Frete - FreteFácil</h1>
+        <form id="freteForm">
+            <label for="distancia">Distância (em km):</label>
+            <input type="number" id="distancia" required>
+
+            <label for="quantidade">Quantidade de Peças:</label>
+            <input type="number" id="quantidade" required>
+
+            <label for="regiao">Região:</label>
+            <select id="regiao" required>
+                <option value="1">Sul</option>
+                <option value="2">Sudeste</option>
+                <option value="3">Centro-Oeste</option>
+            </select>
+
+            <label for="rastreio">Deseja rastreamento?</label>
+            <div class="radio-container">
+                <label for="rastreio-sim">
+                    <input type="radio" id="rastreio-sim" name="rastreio" value="sim"> Sim
+                </label>
+                <label for="rastreio-nao">
+                    <input type="radio" id="rastreio-nao" name="rastreio" value="nao"> Não
+                </label>
+            </div>
+
+            <button type="submit">Calcular Frete</button>
+        </form>
+
+        <div id="resultado" class="resultado">
+            <p><strong>Taxa do rastreamento:</strong> <span id="taxaRastreio">R$ 0,00</span></p>
+            <p><strong>Valor do frete pelas peças:</strong> <span id="fretePecas">R$ 0,00</span></p>
+            <p><strong>Valor do frete por quilômetro:</strong> <span id="freteKm">R$ 0,00</span></p>
+            <p><strong>Total do frete:</strong> <span id="totalFrete">R$ 0,00</span></p>
+        </div>
+    </div>
+
+    <script src="fretefacil.js"></script>
+</body>
+</html>
