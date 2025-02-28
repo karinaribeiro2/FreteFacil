@@ -31,13 +31,13 @@
 1. Clone este repositório:
    
 ```bash
-git clone https://github.com/seu-usuario/FreteFácil.git
+git clone https://github.com/seu-usuario/FreteFacil.git
 ```
 
 2. Acesse a pasta do projeto:
 
 ```bash
-cd FreteFácil
+cd FreteFacil
 ```
 
 3. Abra o arquivo index.html em um navegador.
