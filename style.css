@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input,
+select {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #34D399;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #28a46a;
+}
+
+.radio-container {
+    display: flex;
+    justify-content: center; /* Centraliza apenas os botões de rádio */
+    gap: 20px; /* Espaçamento entre os botões de rádio */
+    margin-bottom: 15px;
+}
+
+.radio-container label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px; /* Diminui o tamanho da fonte */
+}
+
+.radio-container input[type="radio"] {
+    transform: scale(1.1); /* Ajusta o tamanho do botão de rádio */
+}
+
+.resultado {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.resultado p {
+    margin: 5px 0;
+}
+
+.resultado span {
+    font-weight: bold;
+}
